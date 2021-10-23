@@ -1,6 +1,8 @@
 from django.urls import path
-from views import *
+
+from .views import GroupListCreateView, GroupRetrieveUpdateDestroyView
 
 urlpatterns = [
-    path('', )
+    path('', GroupListCreateView.as_view()),
+    path('/<int:pk>', GroupRetrieveUpdateDestroyView.as_view())
 ]

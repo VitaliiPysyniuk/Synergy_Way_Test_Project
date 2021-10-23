@@ -1,3 +1,9 @@
 from django.db import models
 
-# Create your models here.
+
+class UserModel(models.Model):
+    class Meta:
+        db_table = 'users'
+
+    username = models.CharField(max_length=40, unique=True)
+    creation_time = models.DateField(auto_now_add=True)
