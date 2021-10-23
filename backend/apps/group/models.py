@@ -16,5 +16,5 @@ class UserGroupModel(models.Model):
         db_table = 'groups_users'
 
     user = models.ForeignKey(UserModel, on_delete=models.CASCADE, related_name='groups')
-    group = models.ForeignKey(GroupModel, on_delete=models.CASCADE, related_name='users')
+    group = models.ForeignKey(GroupModel, on_delete=models.PROTECT, related_name='users')
 
