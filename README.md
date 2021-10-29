@@ -4,6 +4,22 @@
 <hr style="margin-top: 0"/>
 Before running the application on your machine you need to have docker and docker-compose installed. 
 The installation guide you can find <a href="https://docs.docker.com/desktop/">here</a>.
+<br>Also you need to add .env and .env.db file to the root directory of the project.
+Example of .env file:
+<pre>
+<code><b>
+TIME_ZONE=Etc/GMT-3
+DEBUG=True
+HOST_DB=database #this parameter must be the same</b></code>
+</pre>
+Example of .env.db file:
+<pre>
+<code><b>
+POSTGRES_DB=synergy_way_db
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=1111</b></code>
+</pre>
+
 <h2 style="margin-bottom: 0">Installation</h2>
 <hr style="margin-top: 0"/>
 Before launching application, you need to execute the following commands.<br/>
