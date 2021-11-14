@@ -27,15 +27,15 @@ Before launching application, you need to execute the following commands.<br/>
 <pre>
 <code><b>npm install && npm run build</b></code>
 </pre>
-2. To build images of you containers run in the root :
+2. To build images of you containers run in the root directory:
 <pre>
 <code><b>docker-compose build</b></code>
 </pre>
-3. To start your containers in the background run in the root :
+3. To start your containers in the background run in the root directory:
 <pre>
 <code><b>docker-compose up -d</b></code>
 </pre>
-4. To apply migrations to the newly created database run in the root :
+4. To apply migrations to the newly created database run in the root directory:
 <pre>
 <code><b>docker-compose exec backend python manage.py migrate</b></code>
 </pre>
